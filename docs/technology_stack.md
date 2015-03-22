@@ -8,12 +8,15 @@ These are the technologies used in this project.
 
 ## apt-get-installed
 
+- [fontconfig](http://packages.ubuntu.com/precise/fontconfig) 2.8.0-3ubuntu9 - "generic font configuration library - support binaries."  Required by phantomjs.
 - [git](http://git-scm.com/) [apt-get source](https://launchpad.net/~git-core) 2.3.3 - "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." 
 - [mercurial](http://mercurial.selenic.com/) 3.0.1 - "Easy-to-use, scalable distributed version control system."
+- [node](http://nodejs.org/) 0.10.33 - 'Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.'
 - [vim](http://www.vim.org/) 2:7.4.052-1ubuntu3 - "Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor."
 
 ## bash-installed
 
+- [heroku toolbelt](https://toolbelt.heroku.com/) - 'Everything you need to get started using heroku.'
 - [puppet](http://puppetlabs.com/) 3.7.4 - "Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform."
 
 ## gem-installed
@@ -26,14 +29,30 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 
 ***Check for updates manually.***
 
+- [mongoDB](http://www.mongodb.org/) 2.6.7 - 'The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).'
 - [Vagrant](https://www.vagrantup.com/) 1.7.2 [Change log](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant) - used to manage development environment configuration.
 - [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) 1.2.0 - "A Vagrant plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances."
 - [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.8.0 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
-- [VirtualBox](https://www.virtualbox.org/) 4.3.26 [Changelog](https://www.virtualbox.org/wiki/Changelog) 4.3.26-98988 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 4.3.26 [Changelog](https://www.virtualbox.org/wiki/Changelog) 4.3.26-xxxxx - used to host development environment.
+
+## npm-installed
+
+Global (reflect and changes to these in the README.md file):
+
+- [bower](http://bower.io/) 1.3.12 - 'A package manager for the web.'
+- [gulp](http://gulpjs.com/) 3.8.10 - 'The streaming build system.'
+- [karma-cli](https://github.com/karma-runner/karma-cli) 0.0.4 - 'The Karma command line interface.'
+- [npm](https://npmjs.org/doc/) 2.5.0 - "node package manager"
+- [mocha](https://github.com/mochajs/mocha) 2.1.0 - 'mocha - simple, flexible, fun javascript test framework for node.js & the browser.'
+* [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 [Fork](https://github.com/EATechnologies/npm-check-updates) - Find newer versions of dependencies than what your package.json allows.
+* [npm-install-missing](https://www.npmjs.org/package/npm-install-missing) 0.1.4 - 'This module will attempt to reinstall any missing dependencies. It can be called via the command line or used programmatically.'
+- [slush](http://slushjs.github.io/#/) 1.0.1 'The streaming scaffolding system - Gulp as a replacement for Yeoman.'
+- [slush-generator](https://github.com/chrisenytc/slush-generator) 0.2.5 - 'A slush generator for create slush generators.'
 
 ## Puppet modules
 
+- [jamesnetherton-google_chrome](https://forge.puppetlabs.com/jamesnetherton/google_chrome) 0.1.0 'Installs the Google Chrome web browser.'
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - "The APT module provides a simple interface for managing APT source, key, and definitions with Puppet."
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.5.1 - "This module provides a "standard library" of resources for developing Puppet Modules."
 
