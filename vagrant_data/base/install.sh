@@ -47,6 +47,9 @@ DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -
 
 echo "Puppet installed!"
 
+# Alter puppet.conf to silence deprecation warning about temlatedir
+cat /etc/puppet/puppet.conf | sed -e "s/templatedir=/# templatedir=/" > /etc/puppet/puppet.conf
+
 # Install RubyGems for the provider
 echo "Installing RubyGems..."
 if [ $DISTRIB_CODENAME != "trusty" ]; then

@@ -5,6 +5,6 @@
 pvalidate()
 {
   echo "Puppet validate..."
-  puppet parser validate /vagrant/puppet/manifests/site.pp
+  puppet parser validate /vagrant/puppet/manifests/nodes/base.pp
   return
 }
