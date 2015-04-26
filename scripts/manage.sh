@@ -40,7 +40,8 @@ case $COMMAND in
     exit
     ;;
   test)
-    echo "TEST"
+    source "$DIR/functions/test/test_environment.sh"
+    test_environment
     exit
     ;;
   * | $_NULL)

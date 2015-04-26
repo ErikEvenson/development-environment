@@ -27,4 +27,7 @@ node 'base' {
     path => '/home/vagrant/.bashrc',
     line => 'cd /vagrant',
   }
+
+  exec { '/vagrant/scripts/manage.sh test':
+  }
 }

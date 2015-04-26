@@ -104,3 +104,9 @@ Puppet provisioning can be applied with:
 ```bash
 sudo ./scripts/manage.sh papply
 ```
+
+The environment can be tested with:
+
+```bash
+sudo ./scripts/manage.sh test
+```
