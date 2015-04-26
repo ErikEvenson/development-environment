@@ -2,8 +2,6 @@
 # 2012-2015 3E Enterprises, LLC
 
 class dev_base {
-  include git
-  include mercurial
   include stdlib
   include vim
 

@@ -11,4 +11,14 @@ node 'base' {
   require nodejs
   require node_globals
   require mongodb
+
+  Package {ensure => installed}
+  
+  $packages = [
+    # DVCSs
+    'git',
+    'mercurial',
+  ]
+
+  package {$packages:}
 }
