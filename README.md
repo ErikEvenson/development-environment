@@ -6,23 +6,22 @@ This is a base vagrant box with a puppet provisioner.  The stack used is documen
 
 Using the base box requires installing two packages on the host machine: [VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/).  Both are free.  On a Mac, the easiest way to install both is via [Homebrew](http://mxcl.github.io/homebrew/) and [homebrew-cask](https://github.com/phinze/homebrew-cask).  See the `technology_stack.md` document to find out what versions of software are known to be compatible.
 
-
-Install the [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) plugin to enable the [VirtualBox Guest Additions](https://www.virtualbox.org/manual/ch04.html).
+- Install [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/)
 
 ```bash
-vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-cachier --plugin-version 1.2.0
 ```
 
-Install the [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) plugin.
+- Install [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 
 ```bash
-vagrant plugin install vagrant-librarian-puppet
+vagrant plugin install vagrant-vbguest --plugin-version 0.10.0
 ```
 
-Install [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier) to speed up provisioning.  vagrant-cachier requires Xcode Command Line Tools to be installed as well.
+- Install [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet)
 
 ```bash
-vagrant plugin install vagrant-cachier
+vagrant plugin install vagrant-librarian-puppet --plugin-version 0.9.0
 ```
 
 Remove any existing vagrant boxes.
