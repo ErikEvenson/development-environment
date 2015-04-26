@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# This bootstraps Puppet on Ubuntu 12.04 LTS.
+# This bootstraps Puppet.
 # Adapted from:
 # https://github.com/hashicorp/puppet-bootstrap
 #
