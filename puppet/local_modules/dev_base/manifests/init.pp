@@ -6,8 +6,9 @@ class dev_base {
   Package {ensure => installed}
   
   $packages = [
-    # DVCSs
+    'curl',
     'git',
+    'make',
     'mercurial',
     'vim',
   ]
