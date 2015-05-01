@@ -46,5 +46,11 @@ test_base()
     RETVAL=1
   fi
 
+  # Verify node is installed.
+  if [ ! -e /usr/local/node/node-default/bin/node ]; then
+    echo "FAIL: node is not installed" >&2
+    RETVAL=1
+  fi
+
   return $RETVAL
 }
