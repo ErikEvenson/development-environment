@@ -7,7 +7,7 @@ class dev_base {
     version => 'v0.12.2',
   }
 
-  # Install packages.
+  # Install apt-get packages.
   Package {ensure => installed}
   
   $packages = [
@@ -18,11 +18,13 @@ class dev_base {
 
   package {$packages:}
 
+  # Install gem packages.
   package {'puppet-lint':
-    ensure   => installed,
+    ensure   => '1.1.0',
     provider => gem,
   }
 
+  # Install global npm packages.
   package { 'npm':
     ensure  => '2.9.0',
     provider => 'npm',
