@@ -7,6 +7,8 @@ class dev_base {
     version => 'v0.12.2',
   }
 
+  require mongodb
+
   # Install apt-get packages.
   Package {ensure => installed}
   
