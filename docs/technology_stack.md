@@ -27,7 +27,14 @@ NPM
 
 ## npm-installed
 
-- [npm](https://www.npmjs.com/package/npm) 2.9.0 - A package manager for JavaScript.
+- [bower](http://bower.io/) 1.4.1 - 'A package manager for the web.'
+- [gulp](http://gulpjs.com/) 3.8.11 - 'The streaming build system.'
+- [karma-cli](https://github.com/karma-runner/karma-cli) 0.0.4 - 'The Karma command line interface.'
+- [npm](https://npmjs.org/doc/) 2.9.0 - "node package manager"
+- [mocha](https://github.com/mochajs/mocha) 2.2.4 - 'mocha - simple, flexible, fun javascript test framework for node.js & the browser.'
+* [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 [Fork](https://github.com/EATechnologies/npm-check-updates) - Find newer versions of dependencies than what your package.json allows.
+- [slush](http://slushjs.github.io/#/) 1.1.1 'The streaming scaffolding system - Gulp as a replacement for Yeoman.'
+- [slush-generator](https://github.com/chrisenytc/slush-generator) 0.2.6 - 'A slush generator for create slush generators.'
 
 ## Installed on host
 

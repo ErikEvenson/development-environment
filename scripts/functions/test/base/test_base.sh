@@ -52,5 +52,11 @@ test_base()
     RETVAL=1
   fi
 
+  # Verify mongodb is installed.
+  if [ ! -e /usr/bin/mongo ]; then
+    echo "FAIL: mongo is not installed" >&2
+    RETVAL=1
+  fi
+
   return $RETVAL
 }

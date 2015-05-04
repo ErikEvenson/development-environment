@@ -27,8 +27,57 @@ class dev_base {
   }
 
   # Install global npm packages.
+  package { 'bower':
+    ensure   => '1.4.1',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'gulp':
+    ensure   => '3.8.11',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'karma-cli':
+    ensure   => '0.0.4',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'mocha':
+    ensure   => '2.2.4',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'npm':
-    ensure  => '2.9.0',
+    ensure   => '2.9.0',
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'npm-check-updates':
+    ensure   => '1.5.1',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'slush':
+    ensure   => '1.1.1',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'slush-generator':
+    ensure   => '0.2.6',
+    notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
   }
