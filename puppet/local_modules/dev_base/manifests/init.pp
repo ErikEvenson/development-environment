@@ -26,7 +26,7 @@ class dev_base {
     provider => gem,
   }
 
-  # Install global npm packages.
+  # Install global npm packages.  Update npm last.
   package { 'bower':
     ensure   => '1.4.1',
     notify   => Package['npm'],
