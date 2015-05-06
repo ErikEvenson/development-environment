@@ -4,6 +4,7 @@ These are the technologies used in this project.
 
 ## npm-installed (local)
 
+- [chai](https://github.com/chaijs/chai) 2.3.0 - 'BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.'
 - [gulp](http://gulpjs.com/) 3.8.11 - 'The streaming build system.'
 - [gulp-mocha](https://github.com/sindresorhus/gulp-mocha) 2.0.1 - 'Run Mocha tests.'
 - [karma](http://karma-runner.github.io/0.12/index.html) 0.12.31 - 'Test runner.'

@@ -5,7 +5,15 @@
   "main": "index.js",
   "author": "Erik E. Evenson",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikevenson/development-environment"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
   "devDependencies": {
+    "chai": "2.3.0",
     "gulp": "3.8.11",
     "gulp-mocha": "2.0.1",
     "karma": "0.12.31",

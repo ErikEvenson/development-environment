@@ -17,7 +17,11 @@ module.exports = function(gulp, config) {
     // }, done);
 
     return gulp.src(config.build.testFiles, {read: false})
-      .pipe(mocha());
+      .pipe(mocha({
+        reporter: 'spec',
+        timeout : 500,
+        ui      : 'bdd'
+      }));
 
   });
 };
