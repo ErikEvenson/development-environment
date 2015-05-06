@@ -2,8 +2,6 @@
 
 These are the technologies used in this project.
 
-NPM
-
 ## Foundational
 
 - [bash](http://www.gnu.org/software/bash/manual/bashref.html) 4.3.11(1)-release (x86_64-pc-linux-gnu) - shell.
@@ -25,7 +23,7 @@ NPM
 
 - [puppet-lint](http://puppet-lint.com/) 1.1.0 - Check that your Puppet manifest conform to the style guide.
 
-## npm-installed
+## npm-installed (global)
 
 - [bower](http://bower.io/) 1.4.1 - 'A package manager for the web.'
 - [gulp](http://gulpjs.com/) 3.8.11 - 'The streaming build system.'

@@ -2,7 +2,7 @@
 # 2012-2015 3E Enterprises, LLC
 
 node 'base' {
-  include dev_base
+  include 'dev_base'
 
   # Run tests.
   exec { 'test_environment':
