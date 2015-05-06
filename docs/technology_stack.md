@@ -19,7 +19,7 @@ NPM
 - [mongoDB](http://www.mongodb.org/) 3.0.2 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
 - [node](https://nodejs.org/) 0.12.2 - A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [nvm](https://github.com/creationix/nvm) - Simple bash script to manage multiple active node.js versions.
-- [puppet](http://puppetlabs.com/) 3.7.4 - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
+- [puppet](http://puppetlabs.com/) 3.7.5 - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
 
 ## gem-installed
 
