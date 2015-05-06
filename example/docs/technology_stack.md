@@ -12,3 +12,5 @@ These are the technologies used in this project.
 - [karma-phantomjs-launcher](https://github.com/karma-runner/karma-phantomjs-launcher) 0.1.4 - 'A Karma plugin. Launcher for PhantomJS.'
 - [mocha](https://github.com/mochajs/mocha) 2.2.4 - 'Simple, flexible, fun javascript test framework for node.js & the browser. (BDD, TDD, QUnit styles via interfaces).'
 - [path](https://github.com/jinder/path) 0.11.14 - 'NodeJS 'path' module.'
+- [sinon](https://www.npmjs.com/package/sinon) 1.14.1 - 'JavaScript test spies, stubs and mocks.'
+- [sinon-chai](https://github.com/domenic/sinon-chai) 2.7.0 - 'Extends Chai with assertions for the Sinon.JS mocking framework.'
