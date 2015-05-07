@@ -18,3 +18,6 @@
 
 # Ignore temp directory
 /temp
+
+# Ignore node_modules directories
+node_modules/
