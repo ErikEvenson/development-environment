@@ -1,3 +1,5 @@
+'use strict';
+
 var 
   chai = require('chai');
 
@@ -11,4 +13,4 @@ describe('Array', function(){
       expect([1,2,3].indexOf(0)).to.be.deep.equal(-1);
     })
   })
-})
+});
