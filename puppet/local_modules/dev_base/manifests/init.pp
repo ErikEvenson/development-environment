@@ -4,7 +4,8 @@
 class dev_base {
   # Install nodejs.
   class { 'nodejs':
-    version => 'v0.12.2',
+    target_dir => '/bin',
+    version    => 'v0.12.2',
   }
 
   require mongodb
@@ -55,6 +56,12 @@ class dev_base {
     require  => Class['nodejs'],
   }
 
+  package { 'nodemon':
+    ensure   => '1.3.7',
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'npm':
     ensure   => '2.9.0',
     provider => 'npm',
@@ -92,5 +99,13 @@ class dev_base {
   file_line {'cd_vagrant':
     path => '/home/vagrant/.bashrc',
     line => 'cd /vagrant',
+  }
+
+  # Allow vagrant user to global install npm packages
+  exec { 'chown node directory':
+    command => '/bin/chown -R vagrant:vagrant /usr/local/node/',
+    path    => '/bin',
+    require => Package['npm'],
+    user    => 'root',
   }
 }
