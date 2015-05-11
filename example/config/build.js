@@ -10,9 +10,11 @@ buildConfig = {
   basepath: path.join(__dirname, '..'),
 
   // testFiles is an array of sources for test files.
-  testFiles: [
-    './test/**/*.js'
-  ]
+  testFiles: {
+    build: [],
+    client: [],
+    server: ['./server/**/*.spec.js']
+  }
 };
 
 /** @param {Object} module.exports - Export build configuration. */

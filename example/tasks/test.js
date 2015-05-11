@@ -10,13 +10,12 @@ module.exports = function(gulp, config) {
     mocha = require('gulp-mocha'),
     path = require('path');
 
-  gulp.task('test', function (done) {
-    // karma.start({
-    //   configFile: path.join(__dirname, '../karma.conf.js'),
-    //   singleRun: true
-    // }, done);
+  gulp.task('test', ['test:build', 'test:client', 'test:server'], function() {});
+  gulp.task('test:build', function() {});
+  gulp.task('test:client', function() {});
 
-    return gulp.src(config.build.testFiles, {read: false})
+  gulp.task('test:server', function() {
+    return gulp.src(config.build.testFiles.server, {read: false})
       .pipe(mocha({
         reporter: 'spec',
         timeout : 500,
