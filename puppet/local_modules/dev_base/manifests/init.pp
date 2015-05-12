@@ -28,6 +28,13 @@ class dev_base {
   }
 
   # Install global npm packages.  Update npm last.
+  package { 'bcrypt':
+    ensure   => '0.8.3',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'bower':
     ensure   => '1.4.1',
     notify   => Package['npm'],
@@ -37,6 +44,13 @@ class dev_base {
 
   package { 'gulp':
     ensure   => '3.8.11',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'jwt-simple':
+    ensure   => '0.3.0',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
@@ -107,5 +121,11 @@ class dev_base {
     path    => '/bin',
     require => Package['npm'],
     user    => 'root',
+  }
+
+  # Add node path
+  file_line {'node_path':
+    path => '/etc/environment',
+    line => 'NODE_PATH="/usr/local/node/node-default/lib/node_modules"',
   }
 }

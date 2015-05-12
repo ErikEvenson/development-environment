@@ -25,8 +25,10 @@ These are the technologies used in this project.
 
 ## npm-installed (global)
 
+- [bcrpyt]() 0.8.3
 - [bower](http://bower.io/) 1.4.1 - 'A package manager for the web.'
 - [gulp](http://gulpjs.com/) 3.8.11 - 'The streaming build system.'
+- [jwt-simple]()
 - [karma-cli](https://github.com/karma-runner/karma-cli) 0.0.4 - 'The Karma command line interface.'
 - [npm](https://npmjs.org/doc/) 2.9.0 - "node package manager"
 - [mocha](https://github.com/mochajs/mocha) 2.2.4 - 'mocha - simple, flexible, fun javascript test framework for node.js & the browser.'
