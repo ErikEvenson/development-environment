@@ -2,8 +2,6 @@
 # 2012-2015 Van Brunt and Associates and 3E Enterprises, LLC
 
 class dev_base {
-  include 'google_chrome'
-
   # Install nodejs.
   class { 'nodejs':
     target_dir => '/bin',
@@ -31,12 +29,12 @@ class dev_base {
   }
 
   # Install global npm packages.  Update npm last.
-  #package { 'bcrypt':
-  #  ensure   => '0.8.3',
-  #  notify   => Package['npm'],
-  #  provider => 'npm',
-  #  require  => Class['nodejs'],
-  #}
+  package { 'bcrypt':
+    ensure   => '0.8.3',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
 
   package { 'bower':
     ensure   => '1.4.1',
@@ -87,6 +85,13 @@ class dev_base {
 
   package { 'npm-check-updates':
     ensure   => '1.5.1',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'phantomjs':
+    ensure   => '1.9.16',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],

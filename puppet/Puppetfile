@@ -3,4 +3,3 @@ forge "https://forge.puppetlabs.com"
 mod 'puppetlabs-apt', '1.8.0'
 mod 'puppetlabs-stdlib', '4.6.0'
 mod 'willdurand/nodejs', '1.8.5'
-mod 'jamesnetherton/google_chrome', '0.1.0'
