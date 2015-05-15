@@ -34,6 +34,7 @@ These are the technologies used in this project.
 - [mocha](https://github.com/mochajs/mocha) 2.2.4 - 'mocha - simple, flexible, fun javascript test framework for node.js & the browser.'
 - [nodemon]() 1.3.7
 * [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 [Fork](https://github.com/EATechnologies/npm-check-updates) - Find newer versions of dependencies than what your package.json allows.
+- [phantomjs]() 1.9.16
 - [slush](http://slushjs.github.io/#/) 1.1.1 'The streaming scaffolding system - Gulp as a replacement for Yeoman.'
 - [slush-generator](https://github.com/chrisenytc/slush-generator) 0.2.6 - 'A slush generator for create slush generators.'
 
