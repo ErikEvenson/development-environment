@@ -79,6 +79,13 @@ eval `ssh-agent -s` && ssh-add ~/.ssh/**/*id_rsa
 
 When done, exit the virtual environment and `vagrant halt` to stop the virtual machine.  Use `vagrant destroy` to reclaim the disk space (although this will require you to re-provision the machine again later).  `vagrant remove` should be used to remove the base box from the system as well.  `vagrant up` and `vagrant ssh web` to start another development session later.
 
+Temporary extras:
+
+```bash
+npm -g install phantomjs@1.9.16
+npm -g install bcrypt@0.8.3
+```
+
 ## Scripts
 
 ### Lint scripts

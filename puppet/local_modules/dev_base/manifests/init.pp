@@ -15,6 +15,7 @@ class dev_base {
   $packages = [
     'git',
     'mercurial',
+    'openjdk-7-jdk',
     'vim',
   ]
 
