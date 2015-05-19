@@ -1,6 +1,7 @@
 exports.config = {
   capabilities: {
-    browserName: "firefox"
+  browserName: 'phantomjs',
+    'phantom.binary.path': '/usr/local/node/node-default/bin/phantomjs'
   },
   framework: 'mocha',
   specs: [
