@@ -82,8 +82,14 @@ When done, exit the virtual environment and `vagrant halt` to stop the virtual m
 Temporary extras:
 
 ```bash
-npm -g install phantomjs@1.9.16
-npm -g install bcrypt@0.8.3
+npm -g install phantomjs@1.9.16 bcrypt@0.8.3
+```
+
+In example directory:
+
+```bash
+npm install
+./node_modules/.bin/webdriver-manager update
 ```
 
 ## Scripts
