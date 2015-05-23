@@ -92,8 +92,10 @@ npm install
 npm install lodash --save-dev
 npm install blanket --save-dev
 ./node_modules/.bin/webdriver-manager update
+bower install
 ```
 
+Add .gitignore
 Add .jshintignore and .jshintrc
 Adjust protractor config to use phantomjs
 
