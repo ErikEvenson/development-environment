@@ -20,7 +20,7 @@ SYNCED_FOLDER_TYPE      = "nfs"
 VAGRANT_VERSION_REQUIRE = ">= 1.7.2"
 VAGRANTFILE_API_VERSION = "2"
 VM_BOX                  = "ubuntu/trusty64"
-VM_BOX_VERSION          = "14.04"
+VM_BOX_VERSION          = "20150521.0.0"
 
 # Lock down vagrant version.
 Vagrant.require_version VAGRANT_VERSION_REQUIRE

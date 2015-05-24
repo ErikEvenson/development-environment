@@ -29,7 +29,6 @@ class dev_base {
   $packages = [
     'git',
     'mercurial',
-    'openjdk-7-jdk',
     'vim',
   ]
 
@@ -42,53 +41,6 @@ class dev_base {
   }
 
   # Install global npm packages.  Update npm last.
-#  package { 'bcrypt':
-#    ensure   => '0.8.3',
-#    notify   => Package['npm'],
-#    provider => 'npm',
-#  }
-
-  package { 'bower':
-    ensure   => '1.4.1',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'gulp':
-    ensure   => '3.8.11',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'jwt-simple':
-    ensure   => '0.3.0',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'karma-cli':
-    ensure   => '0.0.4',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'mocha':
-    ensure   => '2.2.4',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'nodemon':
-    ensure   => '1.3.7',
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
   package { 'npm':
     ensure   => '2.9.0',
     provider => 'npm',
@@ -97,27 +49,6 @@ class dev_base {
 
   package { 'npm-check-updates':
     ensure   => '1.5.1',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-#  package { 'phantomjs':
-#    ensure   => '1.9.16',
-#    notify   => Package['npm'],
-#    provider => 'npm',
-#    require  => Class['nodejs'],
-#  }
-
-  package { 'slush':
-    ensure   => '1.1.1',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
-  package { 'slush-generator':
-    ensure   => '0.2.6',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],

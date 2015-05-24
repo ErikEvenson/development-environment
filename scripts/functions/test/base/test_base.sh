@@ -58,5 +58,11 @@ test_base()
     RETVAL=1
   fi
 
+  # Verify heroku is installed.
+  if [ ! -e /usr/local/heroku/bin ]; then
+    echo "FAIL: heroku is not installed" >&2
+    RETVAL=1
+  fi
+
   return $RETVAL
 }
