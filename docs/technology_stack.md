@@ -54,7 +54,8 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
-- [puppet-nodejs](https://forge.puppetlabs.com/willdurand/nodejs) 1.8.5 - A module to install Node.js and NPM.
+mod 'willdurand/nodejs', '1.8.5'
+mod 'garethr/heroku', '0.0.1'
 
 ## Vagrant/vagrant-installed
 

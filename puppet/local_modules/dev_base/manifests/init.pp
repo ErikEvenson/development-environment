@@ -2,11 +2,25 @@
 # 2012-2015 Van Brunt and Associates and 3E Enterprises, LLC
 
 class dev_base {
+  # Install heroku client
+  include 'heroku'
+
+  file {'heroku.sh':
+    path    => '/etc/profile.d/heroku.sh',
+    source  => 'puppet:///modules/dev_base/heroku.sh',
+  }
+
   # Install nodejs.
   class { 'nodejs':
     version    => 'v0.12.2',
   }
 
+  # Add node path
+  file {'nodejs_path.sh':
+    path    => '/etc/profile.d/nodejs_path.sh',
+    source  => 'puppet:///modules/dev_base/nodejs_path.sh',
+  }
+  
   require mongodb
 
   # Install apt-get packages.
@@ -127,11 +141,5 @@ class dev_base {
     path    => '/bin',
     require => Package['npm'],
     user    => 'root',
-  }
-
-  # Add node path
-  file_line {'node_path':
-    path => '/etc/environment',
-    line => 'NODE_PATH="/usr/local/node/node-default/lib/node_modules"',
   }
 }
