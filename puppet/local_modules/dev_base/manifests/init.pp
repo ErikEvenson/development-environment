@@ -6,13 +6,13 @@ class dev_base {
   include 'heroku'
 
   file {'heroku.sh':
-    path    => '/etc/profile.d/heroku.sh',
-    source  => 'puppet:///modules/dev_base/heroku.sh',
+    path   => '/etc/profile.d/heroku.sh',
+    source => 'puppet:///modules/dev_base/heroku.sh',
   }
 
   # Install nodejs.
   class { 'nodejs':
-    version    => 'v0.12.2',
+    version => 'v0.12.2',
   }
 
   # Add node path
